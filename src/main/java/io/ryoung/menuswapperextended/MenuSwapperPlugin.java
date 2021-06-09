@@ -140,6 +140,7 @@ public class MenuSwapperPlugin extends Plugin
 		swap("shoo-away", "pet", config::swapStrayDog);
 		swap("standard", "slayer", config::dagganothKingsLadder);
 		swap("lletya", "prifddinas", () -> !shiftModifier() && config.swapTeleCrystal());
+		swap("talk-to", "pickpocket", config::swapVallessiaVonPitt);
 	}
 
 	private <T extends Enum<?> & SwapMode> void swapMode(String option, Class<T> mode, Supplier<T> enumGet)

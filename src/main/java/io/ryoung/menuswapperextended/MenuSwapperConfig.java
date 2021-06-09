@@ -357,4 +357,16 @@ public interface MenuSwapperConfig extends Config
 	{
 		return false;
 	}
+
+	@ConfigItem(
+			keyName = "swapVallessiaVonPitt",
+			name = "Vallessia von Pitt",
+			description = "Swaps Talk to with Pickpocket for Vallessia von Pitt",
+			section = npcSection
+	)
+	default boolean swapVallessiaVonPitt()
+	{
+		return false;
+	}
+
 }
